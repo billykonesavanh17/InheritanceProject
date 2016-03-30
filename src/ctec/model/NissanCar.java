@@ -1,6 +1,8 @@
 package ctec.model;
 
-public class NissanCar extends Car
+import javax.swing.JOptionPane;
+
+public class NissanCar extends Car 
 {
 	private String modelName;
 	private int yearMake;
@@ -8,40 +10,36 @@ public class NissanCar extends Car
 	
 	public NissanCar()
 	{
+		super();
+		
 		this.setModelName("Skyline R34 GT-R");
 		this.setYearMake(2002);
 		this.setBrandName("Nisan");
 	}
 
-	public String getModelName()
+	public double coolnessLevel()
 	{
-		return modelName;
-	}
-
-	public void setModelName(String modelName)
-	{
-		this.modelName = modelName;
-	}
-
-	public int getYearMake()
-	{
-		return yearMake;
-	}
-
-	public void setYearMake(int yearMake)
-	{
-		this.yearMake = yearMake;
-	}
-
-	public String getBrandName()
-	{
-		return brandName;
-	}
-
-	public void setBrandName(String brandName)
-	{
-		this.brandName = brandName;
+		return  9002;
 	}
 	
+	public void coolAction(int numberOfTimes)
+	{
+		for(int spot = 0; spot < numberOfTimes; spot++)
+		{
+			JOptionPane.showMessageDialog(null, "This car is cool." );
+		}
+	}
 	
+	public int cost()
+	{
+		return 20000;
+	}
+	
+	public void EthanBradberry(int numberOfTimes)
+	{
+		for(int spot = 0; spot < numberOfTimes; spot++)
+		{
+			JOptionPane.showMessageDialog(null, "I'm Ethan Bradberry!!!!!!!");
+		}
+	}
 }

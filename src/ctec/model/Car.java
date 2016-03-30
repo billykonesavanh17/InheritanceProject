@@ -1,6 +1,6 @@
 package ctec.model;
 
-public abstract class Car
+public abstract class Car implements CoolThing
 {
 	//Three Data Members
 	private String modelName;

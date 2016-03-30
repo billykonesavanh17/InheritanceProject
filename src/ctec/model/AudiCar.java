@@ -1,6 +1,9 @@
 package ctec.model;
 
-public class AudiCar extends Car
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
+public class AudiCar extends Car 
 {
 	private String modelName;
 	private int yearMake;
@@ -8,38 +11,30 @@ public class AudiCar extends Car
 	
 	public AudiCar()
 	{
+		super();
+		
 		this.setModelName("R8");
 		this.setYearMake(2017);
 		this.setBrandName("Audi");
 	}
+
+	public double coolnessLevel()
+	{
+		return 9001;
+	}
 	
-	public String getModelName()
+	public void coolAction(int numberOfTimes)
 	{
-		return modelName;
+		
 	}
-
-	public void setModelName(String modelName)
+	
+	public int cost()
 	{
-		this.modelName = modelName;
+		return 162900;
 	}
-
-	public int getYearMake()
+	
+	public void EthanBradberry(int numberOfTimes)
 	{
-		return yearMake;
-	}
-
-	public void setYearMake(int yearMake)
-	{
-		this.yearMake = yearMake;
-	}
-
-	public String getBrandName()
-	{
-		return brandName;
-	}
-
-	public void setBrandName(String brandName)
-	{
-		this.brandName = brandName;
+		
 	}
 }
