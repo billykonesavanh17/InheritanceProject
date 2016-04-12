@@ -2,24 +2,24 @@ package ctec.model;
 
 import javax.swing.JOptionPane;
 
-public class AudiCar extends Car 
+public class LamborghiniCar extends Car 
 {
 	private String modelName;
 	private int yearMake;
 	private String brandName;
 	
-	public AudiCar()
+	public LamborghiniCar()
 	{
 		super();
 		
-		this.setModelName("R8");
-		this.setYearMake(2017);
-		this.setBrandName("Audi");
+		this.setModelName("Gallardo");
+		this.setYearMake(2014);
+		this.setBrandName("Lamborghini");
 	}
 
 	public double coolnessLevel()
 	{
-		return 9001;
+		return  8999.99;
 	}
 	
 	public void coolAction(int numberOfTimes)
@@ -32,7 +32,7 @@ public class AudiCar extends Car
 	
 	public int cost()
 	{
-		return 162900;
+		return 223000;
 	}
 	
 	public void EthanBradberry(int numberOfTimes)
@@ -40,6 +40,7 @@ public class AudiCar extends Car
 		for(int spot = 0; spot < numberOfTimes; spot++)
 		{
 			JOptionPane.showMessageDialog(null, "I'm Ethan Bradberry!!!!!!!");
-		}	
-	}	
+		}
+	}
 }
+

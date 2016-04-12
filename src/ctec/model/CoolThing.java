@@ -2,7 +2,7 @@ package ctec.model;
 /*
  * @author Billy Konesavanh, Alejandro Magallanes, Zach Moyes, Greyson Mitra
  */
-public interface CoolThing
+public interface CoolThing 
 {
 	public double coolnessLevel();
 	public void coolAction(int numberOfTimes);

@@ -22,69 +22,35 @@ public Basketball()
 
 
 public Basketball(InheritanceController baseController)
-
 {
 
-
 }
-
 
 public double coolnessLevel()
-
 {
-
-return 20;
-
+	return 20;
 }
-
 
 public void coolAction(int numberOfTimes)
-
-{
-
-for(int spot = 0; spot < numberOfTimes; spot++)
-
-{
-
-JOptionPane.showMessageDialog(null, "This sport is fun." );
-
-}
-
-}
-
-
-
+	{
+		for(int spot = 0; spot < numberOfTimes; spot++)
+		{
+			JOptionPane.showMessageDialog(null, "This sport is fun." );
+		}
+	}
 
 public int cost()
-
-{
-
-return 500;
-
-}
-
+	{
+	return 500;
+	}
 
 public void EthanBradberry(int numberOfTimes)
-
-{
-
-for(int spot = 0; spot < numberOfTimes; spot++)
-
-{
-
-
-JOptionPane.showMessageDialog(null, "IM ETHAN BRADBERRY");
-
-}
-
-
-
-}
-
-
-
-
-
+	{
+		for(int spot = 0; spot < numberOfTimes; spot++)
+		{
+			JOptionPane.showMessageDialog(null, "IM ETHAN BRADBERRY");
+		}
+	}
 
 }
 
