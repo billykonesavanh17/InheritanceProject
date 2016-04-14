@@ -1,6 +1,6 @@
 package ctec.model;
 
-public abstract class BasketballG implements CoolThing
+public abstract class BasketballG implements CoolThing, Comparable
 {
 	//Three Data Members
 

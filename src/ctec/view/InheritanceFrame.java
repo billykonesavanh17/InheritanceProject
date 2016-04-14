@@ -2,7 +2,6 @@ package ctec.view;
 
 import javax.swing.JFrame;
 
-import chat.controller.ChatController;
 import ctec.controller.InheritanceController;
 
 public class InheritanceFrame extends JFrame

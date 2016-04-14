@@ -2,7 +2,7 @@ package ctec.model;
 
 
 
-public abstract class Sports implements CoolThing
+public abstract class Sports implements CoolThing, Comparable
 
 {
 

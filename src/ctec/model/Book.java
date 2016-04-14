@@ -1,6 +1,6 @@
 package ctec.model;
 
-public abstract class Book implements CoolThing
+public abstract class Book implements CoolThing, Comparable
 
 {
 
