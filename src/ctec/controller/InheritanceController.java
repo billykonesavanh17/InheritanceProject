@@ -53,4 +53,31 @@ public class InheritanceController
 			}
 		}
 	}
+	
+	public void quicksort(int low, int high)
+	{
+		if(low < high)
+		{
+			int midPoint = partition(low, high);
+			quicksort(low, midPoint - 1);
+			quicksort(midPoint + 1, high);
+		}
+	}
+	
+	private int partition(int low, int high)
+	{
+		int position = low;
+		CoolThing pivot = coolThings.get(high);
+		for(int spot = low; spot < high - 1; spot++)
+		{
+			if(coolThings.get(spot).compareTo(pivot) <= 0)
+			{
+				swap(position, spot);
+				position ++;
+			}
+		}
+		swap(position, high);
+		
+		return position;
+	}
 }
