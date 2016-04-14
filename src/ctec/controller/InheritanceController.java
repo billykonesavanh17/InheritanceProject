@@ -19,7 +19,9 @@ public class InheritanceController
 	
 	public String showCoolnessLevels()
 	{
+		String cool = "";
 		
+		return cool; 
 	}
 	
 	private void makeCoolList()
