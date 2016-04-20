@@ -63,7 +63,8 @@ public class InheritancePanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				textArea.append("");
+				baseController.insertionSort();
+				textArea.setText(baseController.showCoolnessLevels());
 			}
 		});
 	}

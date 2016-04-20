@@ -12,6 +12,7 @@ public class InheritanceController
 	public InheritanceController()
 	{
 		//build all model components
+		this.coolThings = new ArrayList<CoolThing>();
 		makeCoolList();
 		//build view
 	}
@@ -20,6 +21,10 @@ public class InheritanceController
 	public String showCoolnessLevels()
 	{
 		String cool = "";
+		for(CoolThing currentCool : coolThings)
+		{
+			cool.concat("This is a " + currentCool.toString() + " and has a coolness level of " + currentCool.coolnessLevel() + "\n");
+		}
 		
 		return cool; 
 	}
