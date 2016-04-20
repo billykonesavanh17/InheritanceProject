@@ -82,6 +82,29 @@ JOptionPane.showMessageDialog(null, "I'm Ethan Bradberry!");
 
 }
 
+public int compareTo(Object compared)
+{
+	int comparedValue = Integer.MIN_VALUE;
+	
+	if(compared instanceof CoolThing)
+	{
+		if(this.coolnessLevel() > ((CoolThing) compared).coolnessLevel())
+		{
+			comparedValue = 1;
+		}
+		else if(this.coolnessLevel() < ((CoolThing) compared).coolnessLevel())
+		{
+			comparedValue = -1;
+		}
+		else
+		{
+			comparedValue = 0;
+		}
+	}
+	
+	return comparedValue;
+}
+
 }
 
 

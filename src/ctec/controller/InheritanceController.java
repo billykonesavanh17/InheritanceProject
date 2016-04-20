@@ -1,19 +1,26 @@
 package ctec.controller;
 
 import java.util.ArrayList;
+
 import ctec.model.CoolThing;
 import ctec.model.AudiCar;
 import ctec.model.NissanCar;
 import ctec.model.LamborghiniCar;
+import ctec.model.ChapterBook;
+import ctec.model.Basketball;
+import ctec.model.NBABasketballGame;
+import ctec.view.InheritanceFrame;
 
 public class InheritanceController
 {
+	private InheritanceFrame baseFrame;
 	
 	public InheritanceController()
 	{
 		//build all model components
 		this.coolThings = new ArrayList<CoolThing>();
 		makeCoolList();
+		baseFrame = new InheritanceFrame(this);
 		//build view
 	}
 	private ArrayList<CoolThing> coolThings;
@@ -34,11 +41,14 @@ public class InheritanceController
 		coolThings.add(new AudiCar());
 		coolThings.add(new NissanCar());
 		coolThings.add(new LamborghiniCar());
+		coolThings.add(new ChapterBook());
+		coolThings.add(new Basketball());
+		coolThings.add(new NBABasketballGame());
 	}
 
 	public void start()
 	{
-		
+	
 	}
 	
 	private void swap(int firstLocation, int secondLocation)

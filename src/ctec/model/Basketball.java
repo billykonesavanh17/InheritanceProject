@@ -1,6 +1,7 @@
 package ctec.model;
 
 import javax.swing.JOptionPane;
+
 import ctec.controller.InheritanceController;
 
 public class Basketball extends Sports
@@ -51,6 +52,29 @@ public void EthanBradberry(int numberOfTimes)
 			JOptionPane.showMessageDialog(null, "IM ETHAN BRADBERRY");
 		}
 	}
+
+public int compareTo(Object compared)
+{
+	int comparedValue = Integer.MIN_VALUE;
+	
+	if(compared instanceof CoolThing)
+	{
+		if(this.coolnessLevel() > ((CoolThing) compared).coolnessLevel())
+		{
+			comparedValue = 1;
+		}
+		else if(this.coolnessLevel() < ((CoolThing) compared).coolnessLevel())
+		{
+			comparedValue = -1;
+		}
+		else
+		{
+			comparedValue = 0;
+		}
+	}
+	
+	return comparedValue;
+}
 
 }
 
