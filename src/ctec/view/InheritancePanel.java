@@ -21,15 +21,18 @@ public class InheritancePanel extends JPanel
 		baseLayout = new SpringLayout();
 		sortButton = new JButton("Sort");
 		
-		setupChatPane();
+		
+		setupPane();
 		setupPanel();
 		setupLayout();
 		setupListeners();
 	}
 	
-	private void setupChatPane()
+	private void setupPane()
 	{
-		textPane = new JScrollPane();
+		textPane = new JScrollPane(textArea);
+		textPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+		textPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		textArea.setLineWrap(true);
 		textArea.setWrapStyleWord(true);
 		textArea.setEnabled(false);
@@ -45,6 +48,7 @@ public class InheritancePanel extends JPanel
 		add(textArea);
 		
 		textArea.setEnabled(false);
+		textArea.setText(baseController.showCoolnessLevels());
 	}
 
 	private void setupLayout()
